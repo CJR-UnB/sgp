@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: sgp_development
+
+test:
+  <<: *default
+  database: sgp_test
+
+production:
+  <<: *default
+  database: sgp_production
+  username: sgp
+  password: <%= ENV['SGP_DATABASE_PASSWORD'] %>
