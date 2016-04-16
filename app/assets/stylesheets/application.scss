@@ -3,8 +3,8 @@
  *= require_self
  */
 
-@import 'base/bases';
-@import 'layout/layouts';
-@import 'state/states';
-@import 'theme/themes';
-@import 'module/modules';
+@import 'base/index';
+@import 'layouts/index';
+@import 'states/index';
+@import 'themes/index';
+@import 'modules/index';
